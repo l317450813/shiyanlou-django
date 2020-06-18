@@ -25,7 +25,7 @@ SECRET_KEY = 'b=x0+ih6py07)h0#)$k2lg+=qlmj%y^wmi=xn*_y@hqfw(%4ye'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fsohmn-zdbmtx-8080.preview.myide.io']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'lxyapp',
 ]
 
 MIDDLEWARE = [
