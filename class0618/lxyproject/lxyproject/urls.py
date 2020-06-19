@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from lxyapp import views
 
+app_name='lxyapp'
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', views.index,name='index'),
     path('', views.book_detail,name='book_detail'),
+    path('addBook/', views.addBook,name='addBook'),
+    path('delBook/<int:book_id>', views.delBook,name='delBook'),
+    path('updateBook/<int:book_id>', views.updateBook,name='updateBook'),
 ]
